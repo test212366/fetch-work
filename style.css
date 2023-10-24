@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	position: relative;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.select {
+	position: absolute;
+	top: 300px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgb(230, 230, 230);
+	padding: 10px;
+	width: 200px;
+
+	cursor: pointer;
+}
+.select__input {
+	padding: 10px;
+}
+.select__dropdown-ul {
+	display: none;
+	list-style: none;
+	padding: 10px;
+}
+.select__dropdown-ul li {
+	padding: 4px;
+}
+.select.open .select__dropdown-ul {
+	display: block;
+}
